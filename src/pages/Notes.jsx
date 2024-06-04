@@ -3,6 +3,7 @@ import { useEffect,useState } from 'react'
 import db from '../appwrite/databases';
 import NoteForm from '../components/NoteForm';
 import { Query } from 'appwrite';
+import Note from '../components/Note';
 const Notes = () => {
 
     const [notes,setNotes]=useState([]);
@@ -14,7 +15,7 @@ const Notes = () => {
         // resposne from the database is an array of objects
         
         setNotes(response.documents);
-        // console.log(response.documents);
+        console.log(response.documents);
     }
 
 
@@ -25,7 +26,10 @@ const Notes = () => {
         <NoteForm setNotes={setNotes}/>
       {
         notes.map((e)=>{
-            return <div key={e.$id}>{e.body}</div>
+            return (    
+            <Note key={e.$id} noteData={e}/>
+                // this noteData contains the object that have the body,completed and the id of the note
+            )
         })
       }
     </div>

@@ -39,3 +39,18 @@ db.notes.create({"body":"noteBody"})
 
 
 sorting karne ke lie we will be using the Query object of the appwrite sdk
+
+now meko data ko update and delete karna hai to vo hum id ke help se kar skte hai 
+
+
+
+
+
+
+
+
+
+
+
+
+

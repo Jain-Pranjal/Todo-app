@@ -27,7 +27,7 @@ const Notes = () => {
       {
         notes.map((e)=>{
             return (    
-            <Note key={e.$id} noteData={e}/>
+            <Note key={e.$id} noteData={e} setNotes={setNotes}/>
                 // this noteData contains the object that have the body,completed and the id of the note
             )
         })

@@ -4,6 +4,7 @@ import db from '../appwrite/databases';
 import NoteForm from '../components/NoteForm';
 import { Query } from 'appwrite';
 import Note from '../components/Note';
+import ThemeOptions from '../components/ThemeOptions';
 const Notes = () => {
 
     const [notes,setNotes]=useState([]);
@@ -26,6 +27,15 @@ const Notes = () => {
         <div>
             <h1>Todo Application</h1>
         </div>
+        <div className="theme-options">
+            <ThemeOptions theme='light'/>
+            <ThemeOptions theme='dark'/>
+            <ThemeOptions theme='purple'/>
+
+        </div>
+
+
+
         <NoteForm setNotes={setNotes}/>
       {
         notes.map((e)=>{

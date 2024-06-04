@@ -29,6 +29,8 @@
     --alert-text-color:#b8952f;
   }
   
+
+  /* new theme */
   [data-theme="dark"]{
     --primary-background-color: #1f2028;
     --secondary-background-color:#2e3039;
@@ -224,6 +226,22 @@
     border-radius: 50%;
     cursor: pointer;
   }
+
+  #theme-dark{
+    background-color: #000;
+    border-color: #fff;
+  }
+
+  #theme-light{
+    background-color: #fff;
+    border-color: #000;
+  }
+
+  #theme-purple{
+    background-color: #954ebe;
+    border-color: #954ebe;
+  }
+
   
   
   

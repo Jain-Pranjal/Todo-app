@@ -23,6 +23,9 @@ const Notes = () => {
     
     // now we have to show the notes in the UIso mapp all the notes
     <div>
+        <div>
+            <h1>Todo Application</h1>
+        </div>
         <NoteForm setNotes={setNotes}/>
       {
         notes.map((e)=>{

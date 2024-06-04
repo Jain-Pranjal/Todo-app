@@ -21,7 +21,7 @@ const NoteForm = ({setNotes}) => {
 
 
   return (
-  <form action="" onSubmit={handleAdd}>
+  <form action="" onSubmit={handleAdd} id="todo-form">
     <input placeholder='What to do today 😁' type="text" name="body" id="" />
   </form>
   )

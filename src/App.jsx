@@ -5,12 +5,16 @@ function App() {
 
   return (
   <>
+     <div id="app" data-theme="dark">
+            <div id="container">
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<Notes />} />
       <Route path="/login" element={<Loginregister />} />
     </Routes>
     </BrowserRouter>
+    </div>
+  </div>
   </>
   )
 }
